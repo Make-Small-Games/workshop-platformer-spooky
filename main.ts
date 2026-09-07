@@ -4,7 +4,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Goal Tile`, function (sprite,
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Attack_Counter < 3) {
         if (Current_Power_Up == Shoot_Power_Up_1) {
-            music.play(music.melodyPlayable(music.magicWand), music.PlaybackMode.InBackground)
             Projectile_1 = sprites.createProjectileFromSprite(assets.image`Projectile Sprite`, My_Player, 100, 0)
             Attack_Counter += 1
         }
@@ -16,27 +15,15 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     if (Jump_Counter < 1) {
         Jump_Counter += 1
-        music.play(music.createSoundEffect(
-        WaveShape.Triangle,
-        180,
-        420,
-        181,
-        0,
-        80,
-        SoundExpressionEffect.None,
-        InterpolationCurve.Linear
-        ), music.PlaybackMode.InBackground)
         My_Player.vy = -150
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Power Up Tile`, function (sprite, location) {
-    music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.InBackground)
     tiles.setTileAt(location, assets.tile`transparency16`)
     My_Player.setImage(assets.image`Player Sprite With Power Up`)
     Current_Power_Up = Shoot_Power_Up_1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Trigger Tile`, function (sprite, location) {
-    music.play(music.melodyPlayable(music.spooky), music.PlaybackMode.InBackground)
     for (let Trigger_Tile of tiles.getTilesByType(assets.tile`Trigger Tile`)) {
         tiles.setTileAt(Trigger_Tile, assets.tile`transparency16`)
     }
@@ -56,20 +43,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`Hazard Tile`, function (sprit
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprites.destroy(otherSprite, effects.fire, 500)
     sprites.destroy(sprite)
-    music.play(music.createSoundEffect(
-    WaveShape.Noise,
-    700,
-    180,
-    219,
-    0,
-    90,
-    SoundExpressionEffect.None,
-    InterpolationCurve.Linear
-    ), music.PlaybackMode.InBackground)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (sprite.bottom < otherSprite.y) {
-        music.play(music.createSoundEffect(WaveShape.Triangle, 120, 55, 199, 36, 150, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
         sprites.destroy(otherSprite)
         sprite.vy = -150
     } else {
