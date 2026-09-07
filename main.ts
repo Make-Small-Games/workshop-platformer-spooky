@@ -60,7 +60,7 @@ let Attack_Counter = 0
 let Shoot_Power_Up_1 = 0
 let My_Player: Sprite = null
 My_Player = sprites.create(assets.image`Player Sprite`, SpriteKind.Player)
-scene.setBackgroundColor(8)
+scene.setBackgroundImage(assets.image`Background Image`)
 tiles.setCurrentTilemap(tilemap`Platformer Level Map`)
 tiles.placeOnRandomTile(My_Player, assets.tile`Player Spawn Tile`)
 scene.cameraFollowSprite(My_Player)
