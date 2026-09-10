@@ -3,82 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "image5":
-            case "Player Sprite":return img`
-. . . . . . f f f f f f . . . . 
-. . . . . f f 1 c c c c f f . . 
-. . . . . f 1 b b b b b b b f . 
-. . . . f f c b d d d d d b f . 
-. . . . f c b b d d d d d b f . 
-. . . . f c b d 1 9 d 1 9 b f . 
-. . . . f c b d 1 9 d 1 9 b f . 
-. . . . f f c b d d d d d f f . 
-. . . . . f c c f f f f f . . . 
-. . . . . f b b b b b b f f . . 
-. . . . f d d b b b b b d d f . 
-. . . . f d d b b b b b d d f . 
-. . . . . f b b f f b b f f . . 
-. . . . . f b b f f b b f . . . 
-. . . . . f 1 b c f b b c f . . 
-. . . . . f f f f f f f f f . . 
-`;
-            case "image1":
-            case "Projectile Sprite":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . 2 2 . . . . 
-. . . . . . . . 2 2 4 4 2 . . . 
-. . . . . . 2 2 4 4 4 4 4 2 . . 
-. . . . 2 2 4 4 5 5 5 4 4 4 2 . 
-. . 2 2 4 4 5 5 5 5 5 5 4 4 2 . 
-2 2 4 4 4 5 5 1 1 1 5 5 4 4 2 . 
-. 2 2 4 5 5 1 1 1 1 1 5 5 4 2 . 
-. . 2 4 5 5 1 1 1 1 1 5 5 4 2 . 
-2 2 4 4 4 5 5 1 1 1 5 5 4 4 2 . 
-. . 2 2 4 4 5 5 5 5 5 5 4 4 2 . 
-. . . . 2 2 4 4 5 5 5 4 4 4 2 . 
-. . . . . . 2 2 4 4 4 4 4 2 . . 
-. . . . . . . . 2 2 4 4 2 . . . 
-. . . . . . . . . . 2 2 . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-            case "image6":
-            case "Player Sprite With Power Up":return img`
-. . . . . f f f f f f f . . . . 
-. . f f f a a a a a a a f f . . 
-. f a a a a a a a a a a a a f . 
-. f a a a a a a d d d d d a f . 
-f a a a a a a a d d d d d a f . 
-f a a f f a a d 1 9 d 1 9 a f . 
-f a f . f a a d 1 9 d 1 9 a f . 
-. f . . f f a a d d d d d f f . 
-. . . . . f a a f f f f f . . . 
-. . . . . f a a a 5 a a f f . . 
-. . . . f d d a a 5 a a d d f . 
-. . . . f d d a a 5 a a d d f . 
-. . . . . f a a a 5 a a f f . . 
-. . . . f a a a a 5 a a a f . . 
-. . . f a a a a a 5 a a a a f . 
-. . . f f f f f f f f f f f f . 
-`;
-            case "image2":
-            case "Enemy Sprite":return img`
-. . . . . f f f f f f f . . . . 
-. . . f f 1 1 1 1 1 1 1 f . . . 
-. . f 1 1 1 1 1 1 1 1 1 1 f . . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 f f 1 1 1 1 f f 1 1 f . 
-. f 1 1 f f 1 1 1 1 f f 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 f f 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
-. f 1 1 f 1 1 f 1 1 f 1 1 f . . 
-. . f f . f f . f f . f f . . . 
-`;
             case "image3":
             case "Background Image":return img`
 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
@@ -201,6 +125,82 @@ f a f . f a a d 1 9 d 1 9 a f .
 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+`;
+            case "image2":
+            case "Enemy Sprite":return img`
+. . . . . f f f f f f f . . . . 
+. . . f f 1 1 1 1 1 1 1 f . . . 
+. . f 1 1 1 1 1 1 1 1 1 1 f . . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 f f 1 1 1 1 f f 1 1 f . 
+. f 1 1 f f 1 1 1 1 f f 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 f f 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 f . 
+. f 1 1 f 1 1 f 1 1 f 1 1 f . . 
+. . f f . f f . f f . f f . . . 
+`;
+            case "image1":
+            case "Projectile Sprite":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . 2 2 . . . . 
+. . . . . . . . 2 2 4 4 2 . . . 
+. . . . . . 2 2 4 4 4 4 4 2 . . 
+. . . . 2 2 4 4 5 5 5 4 4 4 2 . 
+. . 2 2 4 4 5 5 5 5 5 5 4 4 2 . 
+2 2 4 4 4 5 5 1 1 1 5 5 4 4 2 . 
+. 2 2 4 5 5 1 1 1 1 1 5 5 4 2 . 
+. . 2 4 5 5 1 1 1 1 1 5 5 4 2 . 
+2 2 4 4 4 5 5 1 1 1 5 5 4 4 2 . 
+. . 2 2 4 4 5 5 5 5 5 5 4 4 2 . 
+. . . . 2 2 4 4 5 5 5 4 4 4 2 . 
+. . . . . . 2 2 4 4 4 4 4 2 . . 
+. . . . . . . . 2 2 4 4 2 . . . 
+. . . . . . . . . . 2 2 . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image5":
+            case "Player Sprite":return img`
+. . . . . f f f f f f f . . . . 
+. . f f f a a a a a a a f f . . 
+. f a a a a a a a a a a a a f . 
+. f a a a a a a d d d d d a f . 
+f a a a a a a a d d d d d a f . 
+f a a f f a a d 1 9 d 1 9 a f . 
+f a f . f a a d 1 9 d 1 9 a f . 
+. f . . f f a a d d d d d f f . 
+. . . . . f a a f f f f f . . . 
+. . . . . f a a a 5 a a f f . . 
+. . . . f d d a a 5 a a d d f . 
+. . . . f d d a a 5 a a d d f . 
+. . . . . f a a a 5 a a f f . . 
+. . . . f a a a a 5 a a a f . . 
+. . . f a a a a a 5 a a a a f . 
+. . . f f f f f f f f f f f f . 
+`;
+            case "image6":
+            case "Player Sprite With Power Up":return img`
+. . . . . f f f f f f f . . . . 
+. . f f f 2 2 2 2 2 2 2 f f . . 
+. f 2 2 2 2 2 2 2 2 2 2 2 2 f . 
+. f 2 2 2 2 2 2 d d d d d 2 f . 
+f 2 2 2 2 2 2 2 d d d d d 2 f . 
+f 2 2 f f 2 2 d 1 9 d 1 9 2 f . 
+f 2 f . f 2 2 d 1 9 d 1 9 2 f . 
+. f . . f f 2 2 d d d d d f f . 
+. . . . . f 2 2 f f f f f . . . 
+. . . . . f 2 2 2 5 2 2 f f . . 
+. . . . f d d 2 2 5 2 2 d d f . 
+. . . . f d d 2 2 5 2 2 d d f . 
+. . . . . f 2 2 2 5 2 2 f f . . 
+. . . . f 2 2 2 2 5 2 2 2 f . . 
+. . . f 2 2 2 2 2 5 2 2 2 2 f . 
+. . . f f f f f f f f f f f f . 
 `;
         }
         return null;

@@ -1,5 +1,15 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Goal Tile`, function (sprite, location) {
-    game.gameOver(true)
+    Current_Level += 1
+    if (Current_Level == 2) {
+        tiles.setCurrentTilemap(tilemap`Platformer Level 2 Map`)
+        tiles.placeOnRandomTile(My_Player, assets.tile`Player Spawn Tile`)
+    } else if (Current_Level == 3) {
+        sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
+        tiles.setCurrentTilemap(tilemap`Platformer Level 3 Map`)
+        tiles.placeOnRandomTile(My_Player, assets.tile`Player Spawn Tile`)
+    } else {
+        game.gameOver(true)
+    }
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Attack_Counter < 3) {
@@ -57,13 +67,15 @@ let Jump_Counter = 0
 let Projectile_1: Sprite = null
 let Current_Power_Up = 0
 let Attack_Counter = 0
+let Current_Level = 0
 let Shoot_Power_Up_1 = 0
 let My_Player: Sprite = null
 My_Player = sprites.create(assets.image`Player Sprite`, SpriteKind.Player)
 scene.setBackgroundImage(assets.image`Background Image`)
-tiles.setCurrentTilemap(tilemap`Platformer Level Map`)
-tiles.placeOnRandomTile(My_Player, assets.tile`Player Spawn Tile`)
-scene.cameraFollowSprite(My_Player)
-controller.moveSprite(My_Player, 120, 0)
+tiles.setCurrentTilemap(tilemap`Platformer Level 1 Map0`)
 My_Player.ay = 500
+scene.cameraFollowSprite(My_Player)
+tiles.placeOnRandomTile(My_Player, assets.tile`Player Spawn Tile`)
+controller.moveSprite(My_Player, 120, 0)
 Shoot_Power_Up_1 = 1
+Current_Level = 1
