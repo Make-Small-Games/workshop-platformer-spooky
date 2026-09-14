@@ -3,13 +3,9 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const transparency16 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile9 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile6 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile1 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile5 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile7 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -23,11 +19,15 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile14 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile8 = image.ofBuffer(hex``);
+    export const tile3 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile5 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile4 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile3 = image.ofBuffer(hex``);
+    export const tile9 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile8 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -68,7 +68,7 @@ namespace myTiles {
 22222..22..22..22222222222222..2222222222222222222
 22222..22..22..22222222222222..2222222222222222222
 22222222222222222222222222222222222222222222222222
-`, [myTiles.transparency16,myTiles.tile1,myTiles.tile5,myTiles.tile6,myTiles.tile9,myTiles.tile7,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile1,myTiles.tile5,myTiles.tile6,myTiles.tile9,myTiles.tile7,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile8], TileScale.Sixteen);
             case "Platformer Level 2 Map":
             case "level4":return tiles.createTilemap(hex`320010000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000006000006000006000006000006000004000000000000000000000000000000000000000000000000000000000000000000060600000600000600000600000606000400000000000000000000000000000000000000000000000000000000000000000606060000060000060000060000060606040000000000000000000000000000000000000000000000000000020000000006060606070706070706070706070706060606000005000006000000000500000500000500060000000000000103030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808`, img`
 ..................................................
@@ -106,7 +106,7 @@ namespace myTiles {
 22222222222222222222222222222222222222222222222222
 22222222222222222222222222222222222222222222222222
 22222222222222222222222222222222222222222222222222
-`, [myTiles.transparency16,myTiles.tile5,myTiles.tile9,myTiles.tile10,myTiles.tile8,myTiles.tile4,myTiles.tile3,myTiles.tile6,myTiles.tile1,myTiles.tile7,myTiles.tile12], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile5,myTiles.tile9,myTiles.tile10,myTiles.tile8,myTiles.tile4,myTiles.tile3,myTiles.tile6,myTiles.tile1,myTiles.tile7,myTiles.tile12,myTiles.tile14], TileScale.Sixteen);
         }
         return null;
     })
@@ -114,14 +114,10 @@ namespace myTiles {
     helpers._registerFactory("tile", function(name: string) {
         switch(helpers.stringTrim(name)) {
             case "transparency16":return transparency16;
-            case "Goal Tile":
-            case "tile9":return tile9;
             case "Barrier Tile":
             case "tile6":return tile6;
             case "Hazard Tile":
             case "tile1":return tile1;
-            case "Player Spawn Tile":
-            case "tile5":return tile5;
             case "Ground 1 Tile":
             case "tile7":return tile7;
             case "Ground 2 Tile":
@@ -134,12 +130,16 @@ namespace myTiles {
             case "tile13":return tile13;
             case "Ground 6 Tile":
             case "tile14":return tile14;
-            case "Trigger Tile":
-            case "tile8":return tile8;
-            case "Enemy Spawn Tile":
-            case "tile4":return tile4;
             case "Power Up Tile":
             case "tile3":return tile3;
+            case "Player Spawn Tile":
+            case "tile5":return tile5;
+            case "Enemy Spawn Tile":
+            case "tile4":return tile4;
+            case "Goal Tile":
+            case "tile9":return tile9;
+            case "Trigger Tile":
+            case "tile8":return tile8;
         }
         return null;
     })

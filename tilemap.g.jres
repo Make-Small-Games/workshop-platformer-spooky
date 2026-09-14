@@ -4,12 +4,6 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
-    "tile9": {
-        "data": "hwQQABAAAAAAu7u7y7y7C7Du7u677M6760Tk7rvs7rtLRETuu+zuC0tERO677O4LS0RE7rvs7gtLRETuu8vuC0tERO7NvO4LS0RE7s287gtLRETuu8vuC0tERO677O4LS0RE7rvs7gtLRETuu+zuC+tE5O677O67sO7u7rvszrsAu7u7y7y7Cw==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "Goal Tile"
-    },
     "tile6": {
         "data": "hwQQABAAAADb3d3d3d3dzb27u7u7u7vLvbu7u7u7u8u9u7u7u7u7y727u7u7u7vLvbu7u7u7u8u9u7u7u7u7y727u7u7u7vLvbu7u7u7u8u9u7u7u7u7y727u7u7u7vLvbu7u7u7u8u9u7u7u7u7y727u7u7u7vLvbu7u7u7u8vMzMzMzMzMrA==",
         "mimeType": "image/x-mkcd-f4",
@@ -21,12 +15,6 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "Hazard Tile"
-    },
-    "tile5": {
-        "data": "hwQQABAAAAAAAAAAAABARAAAAAAAAEBEAAAAAAAAQEQAAAAAAABARAAAAAAAAEBEAAAAAAAAQEQAAAAAAABARAAAAAAAAEBEAAAAAAAAQEQAAAAAAABARAAAAAAAAEBEAAAAAAAAQEQAAAAAAABARAAAAAAAAEBEAAAAAAAAQEQAAAAAAABARA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "Player Spawn Tile"
     },
     "tile7": {
         "data": "hwQQABAAAADMzMzMzLzLzMzMzMzMvMvMzMzKzMzMzMy8y8zMzMzMzLzLzMzMzMzMzMzMzMrMzMzMzMzMzMy8zMzMzMzMzMzMzMzMzMzMzMzMzKrMzMzMzMzMqszMzMzMzMzMzMzMzMzMzMzMzMzKzKzMzMzMzMzMzMzMzMzMzKzMzMzMzMzMzA==",
@@ -64,23 +52,35 @@
         "tilemapTile": true,
         "displayName": "Ground 6 Tile"
     },
+    "tile3": {
+        "data": "hwQQABAAAAAAAP8PAAAAAAD/IvIAAAAA8CIiDwAAAADwIvIAAAAA//Ai8v8A//DyLyIi8v9EL/IvIiIiIkQi8i8iAiAiIiLyLwIAAC8iIvIvAgAAPzMz8y8CAAAvIiLyLwIAAC8iIvLwAgAA/0Qv8vAiIvLwRP/yAP///wD/AP8AAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Power Up Tile"
+    },
+    "tile5": {
+        "data": "hwQQABAAAAAAALC7u7u7uwCwy8zMzMy8AMvMzMzMzLywzLy7u7u7u7DMa3Z3Z2Z2y7xmd2Z3ZnbLvHZnZnZndsu8dmZ3Zmd2y7x2Znd2Z3bLvHZndndmdsu8ZmdmZmZ3sMxrd3d3d2ewzLy7u7u7uwDLzMzMzMy8ALDLzMzMzLwAALC7u7u7uw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Player Spawn Tile"
+    },
+    "tile4": {
+        "data": "hwQQABAAAAAAAAAAAAAA4AAAAAAAAADgAPD//////+8Av7u7u7u76/C/////y8vrv7u//7vLy+u/u/+//8vL67+7u7u7y8vrv7u////Ly+u/u7u7u8vL67+7////y8vrv7u/v7vLy+vwv/+/u8vL6wC/u7u7u7vrAPD//////+8AAAAAAAAA4A==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Enemy Spawn Tile"
+    },
+    "tile9": {
+        "data": "hwQQABAAAAAAALC7u7u7uwCwy8zMzMy8AMvMzMzMzLywzLy7u7u7u7DMKzIzIyIyy7wiMyIzIjLLvDIjIjIjMsu8MiIzIiMyy7wyIjMyIzLLvDIjMjMiMsu8IiMiIiIzsMwrMzMzMyOwzLy7u7u7uwDLzMzMzMy8ALDLzMzMzLwAALC7u7u7uw==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Goal Tile"
+    },
     "tile8": {
         "data": "hwQQABAAAACIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiA==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "Trigger Tile"
-    },
-    "tile4": {
-        "data": "hwQQABAAAAAAAAAAAAAA4AAAAAAAAADgAPD//////+8Av7u7u7u76/C/////u7vrv7u//7u7u+u/u/+//7u767+7u7u7u7vrv7u///+7u+u/u7u7u7u767+7////u7vrv7u/v7u7u+vwv/+/u7u76wC/u7u7u7vrAPD//////+8AAAAAAAAA4A==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "Enemy Spawn Tile"
-    },
-    "tile3": {
-        "data": "hwQQABAAAAAAAP8PAAAAAAD/IvIAAAAA8CIiDwAAAADwIvIAAAAA//Ai8v8A//DyLyIi8v8AL/IvIiIiIgAi8i8iAiAiIiLyLwIAAC8iIvIvAgAAPzMz8y8CAAAvIiLyLwIAAC8iIvLwAgAA/wAv8vAiIvLwAP/yAP///wD/AP8AAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "Power Up Tile"
     },
     "level2": {
         "id": "level2",
@@ -109,7 +109,8 @@
             "myTiles.tile11",
             "myTiles.tile12",
             "myTiles.tile13",
-            "myTiles.tile14"
+            "myTiles.tile14",
+            "myTiles.tile8"
         ],
         "displayName": "Platformer Level 1 Map"
     },
@@ -145,7 +146,8 @@
             "myTiles.tile6",
             "myTiles.tile1",
             "myTiles.tile7",
-            "myTiles.tile12"
+            "myTiles.tile12",
+            "myTiles.tile14"
         ],
         "displayName": "Platformer Level 3 Map"
     },
